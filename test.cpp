@@ -36,21 +36,3 @@ int main()
     for (int i = 1; i < terms.size(); i++)
         cout << terms[i] / (i + 1) << ' ';
 }
-
-            long sum = 0, i2 = i*i;
-            for (auto j = a; j >= 1; j--)
-            {
-                long temp = i * i / j + 1l;
-                if (temp < c)
-                    sum = (sum + (c - temp)) % M;
-                else
-                    break;
-            }
-
-            long sum = 0, j = a, i2 = i*i, temp = (i2 / j + 1l);
-            while (temp < c && j>0)
-            {
-                sum = (sum + (c - temp)) % M;
-                j--;
-                temp = i2 / j + 1l;
-            }
